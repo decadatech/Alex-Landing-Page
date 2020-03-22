@@ -335,11 +335,240 @@ input:focus, textarea:focus, *:required:focus{border-color:#56AED4;}
 
 .tudo{color: deeppink; font-size: 60px;}
 
-.formula{ background-color: dodgerblue; padding: 8%; color: white;}
+.formula{ background-color: dodgerblue; padding: 3%; color: white;}
 
 #listagem{ margin-left: 10%;}
 
 .reticencias{ color: dodgerblue;}
+
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: white;
+    margin: 3%;
+    border-top: 6px solid dodgerblue;
+    border-radius: 10px;
+    width: 260px;
+    text-align: center;
+    color: darkslategrey;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card span{
+    background-color: #e6eeff;
+    padding: 4%;
+    padding-right: 10%;
+    padding-left: 10%;
+    border-radius: 20px;
+    font-size: 1.0rem;
+}
+
+/* Add some padding inside the card container */
+.cont {
+  padding: 2px 16px;
+}
+
+.cont p{font-weight: 100;}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.longcard{
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+     box-shadow: 0 8px 16px 0 rgba(30,144,255,0.7);
+  transition: 0.3s;
+  background-color: white;
+    margin: 3%;
+    border-top: 6px solid dodgerblue;
+    border-radius: 10px;
+    width: 900px;
+    text-align: center;
+    color: darkslategrey;
+    padding: 2%;
+}
+
+.longcard img{align-self: center; margin: 2%;}
+.longcard p{text-align: left; width: 800px;}
+
+.longcard:hover{
+    box-shadow: 0 16px 20px 0 rgba(30,144,255,0.7);
+}
+
+.acesso{
+    
+    position: relative;
+z-index: 9;
+    
+     box-shadow: 0 8px 16px 0 rgba(30,144,255,0.7);
+    width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    color: dimgrey;
+    border-radius: 15px;
+    padding: 3%;
+    text-align: center;
+}
+
+.acesso:before {
+content: "";
+position: absolute;
+z-index: -1;
+top: 0;
+right: 0;
+bottom: 20%;
+left: 0;
+background-color: dodgerblue;
+height: 150px;
+border-radius:15px 15px 0 0;
+}
+
+.acesso h6{color: white; font-size: 20px;}
+.acesso h1{color: white; font-size: 35px;}
+
+.acesso2{
+    
+    position: relative;
+z-index: 9;
+    
+     box-shadow: 0 8px 16px 0 rgba(30,144,255,0.7);
+    width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    color: dimgrey;
+    border-radius: 15px;
+    padding: 3%;
+    text-align: center;
+}
+
+.acesso2 p{font-weight: 100; font-size: 1.2rem;}
+
+.acesso2:before {
+content: "";
+position: absolute;
+z-index: -1;
+top: 0;
+right: 0;
+bottom: 20%;
+left: 0;
+background-color: black;
+height: 150px;
+border-radius:15px 15px 0 0;
+}
+
+.acesso2 h6{color: white; font-size: 20px;}
+.acesso2 h1{color: white; font-size: 35px;}
+
+.alert{background-color: #e6eeff; padding: 2%; margin: 5%; color: dodgerblue; font-weight: 600; font-size: 17px;}
+
+
+/* Carrossel */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 
 /* Footer */
 #footer .heading{color:#FFFFFF;}
@@ -467,4 +696,7 @@ table a, #comments a{background-color:inherit;}
     .btn.whats{max-width: 250px;}
     .btn.inscrever{max-width: 270px; font-size:1rem; max-height: 100px;}
     .alex{min-width: 340px;}
+    .longcard{max-width: 300px;}
+    .acesso{max-width: 300px;}
+     .acesso2{max-width: 300px;}
 }
