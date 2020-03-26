@@ -404,12 +404,10 @@ input:focus, textarea:focus, *:required:focus{border-color:#56AED4;}
     box-shadow: 0 16px 20px 0 rgba(30,144,255,0.7);
 }
 
-.acesso{
-    
+.acesso{  
     position: relative;
-z-index: 9;
-    
-     box-shadow: 0 8px 16px 0 rgba(30,144,255,0.7);
+    z-index: 9;    
+    box-shadow: 0 8px 16px 0 rgba(30,144,255,0.7);
     width: 900px;
     margin: 0 auto;
     background-color: white;
@@ -420,16 +418,16 @@ z-index: 9;
 }
 
 .acesso:before {
-content: "";
-position: absolute;
-z-index: -1;
-top: 0;
-right: 0;
-bottom: 20%;
-left: 0;
-background-color: dodgerblue;
-height: 150px;
-border-radius:15px 15px 0 0;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 20%;
+    left: 0;
+    background-color: dodgerblue;
+    height: 10%;
+    border-radius:15px 15px 0 0;
 }
 
 .acesso h6{color: white; font-size: 20px;}
@@ -438,9 +436,8 @@ border-radius:15px 15px 0 0;
 .acesso2{
     
     position: relative;
-z-index: 9;
-    
-     box-shadow: 0 8px 16px 0 rgba(30,144,255,0.7);
+    z-index: 9;    
+    box-shadow: 0 8px 16px 0 rgba(30,144,255,0.7);
     width: 900px;
     margin: 0 auto;
     background-color: white;
@@ -596,10 +593,10 @@ border-radius:15px 15px 0 0;
 #footer .faicon-twitter:hover{background-color:#00ACEE;}
 #footer .faicon-vk:hover{background-color:#4E658E;}
 
-.foot{display: flex; flex-wrap: wrap; padding: 20%; font-size: 0.8rem}
+.foot{display: flex; flex-wrap: wrap; padding: ; font-size: 1rem; color: grey;}
 .foot ul{list-style-type: none;}
 .foot a{color: dodgerblue;}
-.item1{}
+.item1{margin: 10%;}
 .row5{padding: 100px;}
 
 
@@ -716,4 +713,6 @@ table a, #comments a{background-color:inherit;}
     .longcard{max-width: 300px;}
     .acesso{max-width: 300px;}
      .acesso2{max-width: 300px;}
-}
+    
+    .acesso:before{height: 205px}
+    
